@@ -1,0 +1,50 @@
+html {
+  overflow-x: hidden;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100vw;
+
+}
+
+button {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+}
+
+
+input {
+  font-size: 1.5em;
+  padding: 10px;
+  background-color: black;
+  width: 100vw;
+}
+
+input::placeholder {
+  font-size: 1.5em;
+}
+
+h3 {
+  padding: 25px;
+  margin: auto;
+  align-self: center;
+}
+/* Media query for screens smaller than 600px (e.g., mobile devices) */
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+  }
+}
+/* Media query for screens smaller than 400px (optional, for very small devices) */
+@media (max-width: 400px) {
+  h3 {
+    font-size: 1.2em; /* Even smaller font size for very small screens */
+  }
+}

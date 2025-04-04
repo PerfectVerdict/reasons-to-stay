@@ -1,0 +1,95 @@
+html {
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.form {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100vw;
+}
+
+
+button {
+  background-color: black;
+  border: 1px solid white;
+  width: 80%; /* 80% width of parent */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input {
+  font-size: .4em;
+  background-color: black;
+  border-radius: 10px; !important
+}
+
+input::placeholder {
+  font-size: .4rem;
+}
+
+h4 {
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: black;
+  border: 1px solid white;
+  width: 80%;
+  color: white;
+}
+
+input {
+  font-size: 1.3em;
+  padding: 10px;
+  background-color: black;
+  width: 80%;
+}
+
+input::placeholder {
+  font-size: .8em;
+  padding: 10px;
+  font-weight: 500;
+}
+
+h4 {
+  margin: auto;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* Media query for screens smaller than 600px (e.g., mobile devices) */
+/* @media (max-width: 600px) { */
+/*   h3 { */
+/*     font-size: 1.5em; /1* Smaller font size for smaller screens *1/ */
+/*   } */
+/* } */
+/* /1* Media query for screens smaller than 400px (optional, for very small devices) *1/ */
+/* @media (max-width: 400px) { */
+/*   h3 { */
+/*     font-size: 1.2em; /1* Even smaller font size for very small screens *1/ */
+/*   } */
+/* } */

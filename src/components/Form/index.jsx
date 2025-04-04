@@ -1,35 +1,46 @@
 import {useState} from 'react';
+import './style.css';
 
 function Form() {
   const [message, setMessage] = useState('');
-
+  const [messages, setMessages] = useState([])
   const handleInputChange = (e) => {
-    const { message, value } = e.target;
-    console.log(message)
+    const { value } = e.target;
+    setMessage(value)
   } 
-    const handleFormSubmit = (e) => {
-      e.preventDefault();
-      setMessage('')
-
-
-      
-    }
-  
-
-
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (message.trim() === '') return;
+    setMessages([...messages, message])
+    console.log(message)
+    console.log(messages)
+  }
 
 
   return (
-    <form className='form' onSubmit={handleFormSubmit}>
-      <input
-        value={message}
-        name="message"
-        onChange={handleInputChange}
-        type="text"
-        placeholder="Insert encouraging message"
-      />
+    <>
+      <div className="container"> 
 
-    </form>
+        <form className='form' onSubmit={handleFormSubmit}>
+        <h4>Insert encouraging message</h4>
+          <input
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="I hope you have a lovely day!"
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div className='messages'>
+          {messages.map((msg,index) => {
+            <div key={index} className='message'>
+              <p>{msg}</p>
+            </div>
+          })}
+        </div>
+      </div>
+    </>
   ) 
 }
-  export default Form;
+export default Form;
