@@ -1,11 +1,10 @@
-html {
-  overflow-x: hidden;
-}
 
 
 * {
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  overflow-x: hidden;
 }
+
 
 html {
   overflow-x: hidden;
@@ -19,68 +18,60 @@ html {
   align-items: center;
   gap: 10px;
   width: 100vw;
+  margin-top: 10px;
 }
 
 
 button {
   background-color: black;
   border: 1px solid white;
-  width: 80%; /* 80% width of parent */
+  width: 40%; /* 80% width of parent */
   color: white;
   padding: 10px;
   border-radius: 10px;
 }
 
 input {
+  width: 60%; 
   font-size: .4em;
   background-color: black;
   border-radius: 10px; !important
+  display: flex;
+  color: white;
 }
 
 input::placeholder {
-  font-size: .4rem;
+  font-size: .2rem;
 }
 
 h4 {
-  padding: 5px;
   margin: auto;
   text-align: center;
-  margin-top: 10px;
-  font-size: 1rem
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-button {
-  background-color: black;
-  border: 1px solid white;
-  width: 80%;
-  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8em;
+  margin: 10px;
 }
 
 input {
   font-size: 1.3em;
   padding: 10px;
   background-color: black;
-  width: 80%;
+  width: 40%;
+  font-family: "Inter";
+
+
 }
 
 input::placeholder {
-  font-size: .8em;
   padding: 10px;
-  font-weight: 500;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
 }
-
-h4 {
-  margin: auto;
-  text-align: center;
-  font-size: 1.4em;
-}
-
 /* Media query for screens smaller than 600px (e.g., mobile devices) */
 /* @media (max-width: 600px) { */
 /*   h3 { */

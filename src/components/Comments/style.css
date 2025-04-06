@@ -1,0 +1,23 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  height: fit-content;
+  padding: 10px;
+  padding-left: 15px;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.actual-comment {
+  overflow-y: hidden;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Inter", cursive;
+  word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+
+
+}
+
