@@ -1,13 +1,11 @@
+@tailwind base;
+/* your custom styles follow */
 
-@import "tailwindcss";
-#root {
-}
+
 
 body {
   background-color: black;
 }
-
-
 
 @layer base {
   :root {
@@ -66,12 +64,3 @@ body {
 }
 
 
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}

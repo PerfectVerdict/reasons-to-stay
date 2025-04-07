@@ -27,6 +27,7 @@ function Form({handleFormSubmit}) {
             onChange={handleInputChange}
             type="text"
             placeholder="I hope you have a lovely day!"
+            className="p-3"
           />
           <button type="submit">Submit</button>
         </form>
